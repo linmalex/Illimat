@@ -25,6 +25,10 @@ namespace Illimat
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            //my added bundles
+            bundles.Add(new ScriptBundle("~/bundles/jqueryForBootstrap").Include(
+                "~/Scripts/jquery-3.3.1.slim.min.js"));
         }
     }
 }

@@ -15,5 +15,10 @@ namespace Illimat.DAL
 
         public DbSet<Game> Games { get; set; }
         public DbSet<Player> MyProperty { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
     }
 }
