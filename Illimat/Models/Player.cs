@@ -9,6 +9,7 @@ namespace Illimat.Models
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public List<IllimatCard> Hand { get; set; }
         public int IllimatWinCount { get; set; }
     }
 }

@@ -10,6 +10,7 @@ namespace Illimat.Models
         public int Id { get; set; }
         public DateTime DatePlayed { get; set; }
         public string Name { get; set; }
+        public Player ActivePlayer { get; set; }
 
         public virtual List<Player> PlayerList { get; set; }
 
